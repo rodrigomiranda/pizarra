@@ -1,0 +1,29 @@
+# archivos que genera localmente Symfony2 para mejorar el rendimiento
+app/bootstrap.php.cache
+app/bootstrap_cache.php.cache
+
+app/config/parameter.yml
+app/config/parameter.ini
+
+# directorio con todos los archivos de caché
+app/cache/*
+
+# directorio con los archivos de log
+app/logs/*
+
+# directorio con todos los componentes y librerías de Symfony2
+vendor/*
+
+# directorios donde Symfony2 vuelca todos los archivos públicos
+web/bundles/*
+web/css/*
+web/js/*
+*~.*
+
+# archivos creados por los IDEs Eclipse, Zend Studio, Netbeans, PHPStorm y TextMate
+.buildpath
+.project
+.settings
+nbproject
+.idea
+.tm_properties

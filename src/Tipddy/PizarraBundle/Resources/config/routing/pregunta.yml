@@ -1,0 +1,30 @@
+pregunta:
+    pattern:  /
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:index" }
+
+pregunta_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:show" }
+
+pregunta_new:
+    pattern:  /new
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:new" }
+
+pregunta_create:
+    pattern:  /create
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:create" }
+    requirements: { _method: post }
+
+pregunta_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:edit" }
+
+pregunta_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:update" }
+    requirements: { _method: post }
+
+pregunta_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TipddyPizarraBundle:Pregunta:delete" }
+    requirements: { _method: post }

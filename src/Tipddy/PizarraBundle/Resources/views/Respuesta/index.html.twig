@@ -1,0 +1,26 @@
+<h1>Pregunta list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Etiqueta</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('pregunta_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.etiqueta }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('respuesta_new', { 'pregunta': entity.id }) }}">Responder</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

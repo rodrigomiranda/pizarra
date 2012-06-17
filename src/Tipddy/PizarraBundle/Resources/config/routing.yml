@@ -1,3 +1,9 @@
-TipddyPizarraBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: TipddyPizarraBundle:Default:index }
+TipddyPizarraBundle_pregunta:
+    resource: "@TipddyPizarraBundle/Resources/config/routing/pregunta.yml"
+    prefix:   /pregunta
+
+
+TipddyPizarraBundle_respuesta:
+    resource: "@TipddyPizarraBundle/Resources/config/routing/respuesta.yml"
+    prefix:   /respuesta		
+

@@ -50,6 +50,13 @@ class Pregunta
      */   
     private $respuestas;
      
+     
+    public function __toString()
+    {
+	    return $this->getEtiqueta();
+    } 
+     
+     
 
 
     public function __construct()

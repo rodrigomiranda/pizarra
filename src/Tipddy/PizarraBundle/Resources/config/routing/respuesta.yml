@@ -1,0 +1,37 @@
+respuesta:
+    pattern:  /
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:index" }
+
+respuesta_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:show" }
+
+respuesta_new:
+    pattern:  /{pregunta}/new
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:new" }
+    requirements: { pregunta: \d+ }
+
+respuesta_ajax:
+    pattern:  /{pregunta}/ajax
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:ajax" }
+    requirements: { pregunta: \d+ }
+
+
+respuesta_create:
+    pattern:  /create
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:create" }
+    requirements: { _method: post }
+
+respuesta_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:edit" }
+
+respuesta_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:update" }
+    requirements: { _method: post }
+
+respuesta_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TipddyPizarraBundle:Respuesta:delete" }
+    requirements: { _method: post }
